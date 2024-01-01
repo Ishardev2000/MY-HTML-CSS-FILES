@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid htmo and css</title>
+    <style>
+        * {
+            /* width: 100%; */
+            margin: 0;
+            padding: 0;
+            border: 2px red ridge;
+        }
+
+        .container {
+            /* height:100vh;
+              width: 100%; */
+            background-color: aquamarine;
+            display: grid;
+            border: 2px red dashed;
+            /* padding: 1%; */
+            grid-template-rows: [r1]32%px [r3] 32% [r3] 32%;
+            grid-template-columns: [h]32%px [w] 32% [t] 32%;
+        }
+
+        .card {
+
+            border: 2px red dashed;
+        }
+
+        .card-1 {
+            grid-column: 1/4;
+        }
+
+        .card-8 {
+            grid-column: 1/4;
+        }
+
+        .card-7 {
+            grid-column: 2/4;
+        }
+
+        .card-2 {
+
+            grid-row: 2/5;
+        }
+
+        /* .card-3 {
+            grid-column: ;
+            grid-row: ;
+        }
+
+        .card-4 {
+            grid-column: ;
+            grid-row: ;
+        }
+
+        .card-5 {
+            grid-column: ;
+            grid-row: ;
+        } */
+        .nav {
+            border: none;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .nav span {
+            padding: 20px;
+            border: none;
+
+        }
+
+        .nav span h1 {
+            padding: 2px;
+            border: none;
+
+        }
+
+        .nav span h3 {
+            padding: 10px;
+            border: none;
+
+        }
+
+        .nav:hover {
+            padding: 10px;
+            border: 2px red dashed;
+        }
+
+        .nav span:hover {
+            padding: 10px;
+            border: 2px red dashed;
+        }
+
+        .list {
+            border: none;
+        }
+
+        .list ul {
+            padding: 20px;
+        }
+
+        .list ol {
+            padding: 20px;
+        }
+
+        .list li {
+            padding: 10px;
+            border: none;
+        }
+
+        .list:hover {
+            padding: 10px;
+            border: 2px red dashed;
+        }
+
+        .list li:hover {
+            padding: 10px;
+            border: 2px red dashed;
+        }
+
+        .footer {
+            display: flex;
+            border: none;
+            padding: 5px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card-1">
+            <div class="nav">
+                <span>
+                    <h1>Muhammad Ishar</h1>
+                </span>
+                <span>
+                    <h3>home</h3>
+                </span>
+                <span>
+                    <h3>about</h3>
+                </span>
+                <span>
+                    <h3>contact</h3>
+                </span>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="list">
+                <ol>
+                    <li>My Order list</li>
+                    <li>My Order list</li>
+                    <li>My Order list</li>
+                    <li>My Order list</li>
+                    <li>My Order list</li>
+                </ol>
+                <ul>
+                    <li>My UnOrder list</li>
+                    <li>My UnOrder list</li>
+                    <li>My UnOrder list</li>
+                    <li>My UnOrder list</li>
+                    <li>My UnOrder list</li>
+                    <li>My UnOrder list</li>
+                </ul>
+            </div>
+        </div>
+            <div class="card card-3">
+                <h4>lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reprehenderit impedit necessitatibus doloremque, nam ullam perspiciatis commodi voluptates enim explicabo ipsa dolorum laboriosam quae totam voluptas sint iure cupiditate non hic animi veniam unde quo architecto. Alias voluptatibus soluta nesciunt.</p>
+            </div>
+            <div class="card card-4">
+                 <h4>lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reprehenderit impedit necessitatibus doloremque, nam ullam perspiciatis commodi voluptates enim explicabo ipsa dolorum laboriosam quae totam voluptas sint iure cupiditate non hic animi veniam unde quo architecto. Alias voluptatibus soluta nesciunt.</p>
+            </div>
+            <div class="card card-5">
+                 <h4>lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reprehenderit impedit necessitatibus doloremque, nam ullam perspiciatis commodi voluptates enim explicabo ipsa dolorum laboriosam quae totam voluptas sint iure cupiditate non hic animi veniam unde quo architecto. Alias voluptatibus soluta nesciunt.</p>
+            </div>
+            <div class="card card-6">
+                 <h4>lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reprehenderit impedit necessitatibus doloremque, nam ullam perspiciatis commodi voluptates enim explicabo ipsa dolorum laboriosam quae totam voluptas sint iure cupiditate non hic animi veniam unde quo architecto. Alias voluptatibus soluta nesciunt.</p>
+            </div>
+
+        <div class="card card-7">
+            <div class="msg">
+                <h3>
+                    How to use Grid
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi, sapiente, doloremque
+                    quibusdam earum, quaerat quisquam molestiae a placeat corrupti distinctio ipsa mollitia nesciunt.
+                    Sint, molestias esse aut iusto beatae, tempora error vel asperiores iste odit modi, animi numquam
+                    assumenda non repellendus illo! Quibusdam quos ipsa quia laboriosam. Quas id eveniet dolore quasi,
+                    tempore maxime commodi quidem, quia architecto ibus
+                error tempora. Eius quas, nemo aut, prov</p>
+            </div>
+        </div>
+        <div class="card card-8">
+            <div class="footer">
+                <h2>footer footer</h2>
+                <h1>Muhammad Ishar</h1>
+                <h2>footer footer</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
