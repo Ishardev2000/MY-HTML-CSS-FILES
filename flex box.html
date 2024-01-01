@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex box</title>
+  <style>
+    * {
+
+      margin: 0;
+      border: 20px ridge red;
+    }
+
+    .container {
+      overflow-y: auto;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      background-color: aquamarine;
+      /* row-gap: 33px; */
+      /* flex-wrap: nowrap; */
+      /* flex-flow: wrap row-reverse; */
+      /* flex-wrap: wrap-reverse;
+            f start f end f around-between 
+            */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+
+    .box {
+      height: 8rem;
+      width: 8rem;
+      background-color: rgb(38, 113, 88);
+      border: 20px ridge red;
+      padding: 5px;
+      margin: 3px;
+      border-radius: 10px;
+    }
+
+    .a {
+      align-self: flex-start;
+      flex-grow: 2;
+      order: 0;
+      background-color: black;
+    }
+
+    .b {
+      align-self: flex-end;
+      order: 1;
+      background-color: rgb(95, 36, 36);
+    }
+
+    .c {
+      /* flex-grow: 1; */
+      order: 10;
+      background-color: rgb(249, 0, 0);
+    }
+
+    .d {
+      /* flex-grow: 3; */
+      order: 12;
+      background-color: rgb(141, 78, 78);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box a">1</div>
+    <div class="box b">2</div>
+    <div class="box c">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box d">12</div>
+  </div>
+</body>
+
+</html>
